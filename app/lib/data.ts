@@ -84,23 +84,23 @@ export const STATS: StatItem[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     num: "01",
-    title: "Discovery",
-    desc: "We dive deep into your vision, goals, and audience to understand the story that needs to be told.",
+    title: "Client Briefing",
+    desc: " A detailed session to understand your goals key messages and taget audience.",
   },
   {
     num: "02",
-    title: "Strategy",
-    desc: "We craft a tailored creative plan, defining the visual direction, timeline, and deliverables.",
+    title: "Structuring ",
+    desc: "Devloping a compelling narrative and visual plan for your video content.",
   },
   {
     num: "03",
-    title: "Production",
-    desc: "Our team brings the vision to life with world-class equipment, talent, and creative direction.",
+    title: "Execution ",
+    desc: "Filming and producing hight quality, engaging and professional content tailored to your needs.",
   },
   {
     num: "04",
-    title: "Delivery",
-    desc: "We polish, refine, and deliver assets that exceed expectations — on time, every time.",
+    title: "Post Execution Media Management",
+    desc: "Editing, optimizing and devlivering the final product for maximum impact across multiple platforms.",
   },
 ];
 
