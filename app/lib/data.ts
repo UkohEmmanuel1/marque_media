@@ -11,34 +11,29 @@ export const NAV_LINKS = [
 export const SERVICES: ServiceItem[] = [
   {
     num: "01",
-    title: "Video Production",
-    desc: "Cinematic storytelling from concept to final cut. We produce compelling video content that captures attention and drives results.",
+    title: "Press Coverage",
+    desc: "We leverage our robust network of TVs, Radio, and other digital media platforms to keep your brand and event story treding.",
     tag: "Film & Motion",
   },
   {
     num: "02",
-    title: "Photography",
-    desc: "High-end commercial photography that elevates your brand. Editorial, product, and lifestyle imagery crafted with precision.",
+    title: "Media Activation",
+    desc: "Scripting and executing a two minute video triller that tells your brand story in the most appealing way to your target audience.",
     tag: "Visual Art",
   },
   {
     num: "03",
-    title: "Brand Strategy",
-    desc: "Strategic visual identity creation that positions your brand for lasting impact and recognition in competitive markets.",
+    title: "Event Coverage",
+    desc: "We help to create post event memories from your events by capturing and creating lasting memories from yourevents.",
     tag: "Identity",
   },
   {
     num: "04",
-    title: "Social Media",
-    desc: "Scroll-stopping content designed for maximum engagement. From reels to campaigns, we create content that converts.",
+    title: "Event Structuring and Management",
+    desc: "We go beyond coverage to help you structure your event to meet its objectives.",
     tag: "Digital",
   },
-  {
-    num: "05",
-    title: "Post-Production",
-    desc: "Color grading, VFX, and editing that transforms raw footage into polished masterpieces. Where the magic happens.",
-    tag: "Finishing",
-  },
+  
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
