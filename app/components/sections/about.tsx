@@ -33,20 +33,20 @@ export default function About() {
             </div>
 
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl leading-tight text-text-primary mb-6">
-              We Don&apos;t Just Create Content —{" "}
-              <span className="text-accent">We Craft Experiences</span>
+              Who We Are{" "}
             </h2>
 
             <p className="font-body text-muted leading-relaxed mb-6">
-              Marque Media is a premium media production agency based in Lagos, Nigeria. 
-              We specialize in creating cinematic visual content that elevates brands, 
-              tells compelling stories, and drives measurable results.
+              Marque Media is a media subsidiary of Marque projection,
+              specializing in creating high end media content for events, and
+              working with top tier brands, we understand the nuances of
+              creating visual content that tells your brand and event story to
+              your target audience.
             </p>
             <p className="font-body text-muted leading-relaxed mb-10">
-              Our team of filmmakers, photographers, and creative strategists bring a 
-              unique blend of artistry and commercial acumen to every project. From 
-              global campaigns to intimate brand stories, we approach each brief with 
-              the same passion and precision.
+              Our process begins with a deep understanding of your project, and
+              we create a strategic narrative which is executed by our world
+              class media team to deliver a polished visual masterpiece.
             </p>
 
             {/* Values */}
@@ -57,7 +57,9 @@ export default function About() {
                 { label: "Impact", icon: "●" },
               ].map((val) => (
                 <div key={val.label} className="text-center md:text-left">
-                  <span className="text-accent text-lg mb-2 block">{val.icon}</span>
+                  <span className="text-accent text-lg mb-2 block">
+                    {val.icon}
+                  </span>
                   <span className="font-display text-sm tracking-[0.15em] uppercase text-text-primary">
                     {val.label}
                   </span>
@@ -76,26 +78,63 @@ export default function About() {
           >
             <div className="relative">
               {/* Main image placeholder */}
-              <div className="aspect-[4/5] bg-gradient-to-br from-bg-elevated via-bg-card to-accent/10 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative aspect-[4/5] overflow-hidden group">
+                {/* 1. The Background Image */}
+                <img
+                  src="/assets/02.JPG"
+                  alt="Our Studio"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+
+                {/* 2. Dark Overlay (Ensures the camera icon and text stay readable) */}
+                <div className="absolute inset-0 bg-black/40 transition-opacity duration-500 group-hover:bg-black/50" />
+
+                {/* 3. The Camera Icon & Text Content */}
+                <div className="absolute inset-0 flex items-center justify-center z-10">
                   <div className="text-center space-y-4">
-                    <div className="w-20 h-20 mx-auto border border-accent/20 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-accent/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
+                    {/* Added backdrop-blur so the image slightly blurs behind the circle */}
+                    <div className="w-20 h-20 mx-auto border border-white/30 bg-black/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <svg
+                        className="w-8 h-8 text-white/90"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1}
+                          d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1}
+                          d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"
+                        />
                       </svg>
                     </div>
-                    <p className="font-display text-white/15 text-xs tracking-widest uppercase">Our Studio</p>
+                    <p className="font-display text-white text-xs tracking-widest uppercase font-medium">
+                      Our Studio
+                    </p>
                   </div>
                 </div>
-                {/* Overlay gradient */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-bg to-transparent" />
+
+                {/* 4. Bottom Overlay gradient */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-bg to-transparent z-10" />
               </div>
 
               {/* Floating accent card */}
-              <div className="absolute -bottom-6 -left-6 bg-bg-card border border-border-accent p-6 max-w-[200px]" style={{ animation: "float 5s ease-in-out infinite" }}>
-                <span className="font-display font-bold text-3xl text-accent block">6+</span>
-                <span className="font-body text-xs text-muted tracking-wider uppercase">Years Creating Stories</span>
+              <div
+                className="absolute -bottom-6 -left-6 bg-bg-card border border-border-accent p-6 max-w-[200px]"
+                style={{ animation: "float 5s ease-in-out infinite" }}
+              >
+                <span className="font-display font-bold text-3xl text-accent block">
+                  6+
+                </span>
+                <span className="font-body text-xs text-muted tracking-wider uppercase">
+                  Years Creating Stories
+                </span>
               </div>
 
               {/* Offset border */}
