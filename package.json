@@ -1,4 +1,17 @@
 {
+<<<<<<< HEAD
+  "name": "marque_medias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+=======
   "name": "marque_media",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +35,7 @@
     "eslint-config-next": "16.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+<<<<<<< HEAD
   },
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",
@@ -37,4 +51,8 @@
     "url": "https://github.com/UkohEmmanuel1/marque_media/issues"
   },
   "homepage": "https://github.com/UkohEmmanuel1/marque_media#readme"
+=======
+  }
+>>>>>>> 5ed4979f68dd2eb2b1831cd2eaee7c33f6958b46
+>>>>>>> 50e2dc49cb352b19779b5f285a47c533df833f08
 }
