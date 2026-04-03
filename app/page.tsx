@@ -4,8 +4,8 @@ import Footer from "./components/layout/footer";
 import Hero from "./components/sections/hero";
 import About from "./components/sections/about";
 import Services from "./components/sections/services";
-import PortfolioSection from "./components/sections/portfolio_grid";
-import Process from "./components/sections/process";
+//import PortfolioSection from "./components/sections/portfolio_grid";
+//import Process from "./components/sections/process";
 import Stats from "./components/sections/stats";
 import Testimonials from "./components/sections/testimonials";
 import Contact from "./components/sections/contact";
@@ -19,8 +19,11 @@ export default function Page() {
         <Hero />
         <About />
         <Services />
-        <PortfolioSection />
-        <Process />
+        
+        {/*<Services /> <PortfolioSection /> <Process />*/}
+        
+        
+        
         <Stats />
         <Testimonials />
         <Contact />

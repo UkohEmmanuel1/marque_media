@@ -27,12 +27,6 @@ export const SERVICES: ServiceItem[] = [
     desc: "We help to create post event memories from your events by capturing and creating lasting memories from yourevents.",
     tag: "Identity",
   },
-  {
-    num: "04",
-    title: "Event Structuring and Management",
-    desc: "We go beyond coverage to help you structure your event to meet its objectives.",
-    tag: "Digital",
-  },
   
 ];
 

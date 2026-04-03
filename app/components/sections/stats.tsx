@@ -27,7 +27,7 @@ function AnimatedCounter({ target, suffix, inView }: { target: number; suffix: s
   return (
     <span className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-text-primary tabular-nums">
       {count}
-      <span className="text-accent">{suffix}</span>
+      <span className="text-sky-400">{suffix}</span>
     </span>
   );
 }
@@ -42,11 +42,11 @@ export default function Stats() {
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg-card to-bg" />
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-accent/5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sky-400/5 via-transparent to-sky-400/5" />
 
       {/* Top & bottom lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sky-400/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sky-400/30 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">

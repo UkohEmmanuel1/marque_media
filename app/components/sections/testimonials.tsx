@@ -25,7 +25,7 @@ export default function Testimonials() {
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-bg via-bg-card/30 to-bg pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-accent/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-sky-400/5 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto">
         {/* Header */}
@@ -37,14 +37,14 @@ export default function Testimonials() {
           }}
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="inline-block w-8 h-px bg-accent" />
-            <p className="font-body text-xs tracking-[0.35em] uppercase text-accent">
+            <span className="inline-block w-8 h-px bg-sky-400" />
+            <p className="font-body text-xs tracking-[0.35em] uppercase text-sky-400">
               Testimonials
             </p>
-            <span className="inline-block w-8 h-px bg-accent" />
+            <span className="inline-block w-8 h-px bg-sky-400" />
           </div>
           <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-text-primary">
-            What Our Clients <span className="text-accent">Say</span>
+            What Our Clients <span className="text-sky-400">Say</span>
           </h2>
         </div>
 
@@ -63,8 +63,8 @@ export default function Testimonials() {
 
           <div className="bg-bg-card border border-border p-8 md:p-12 lg:p-16 relative overflow-hidden">
             {/* Accent corner */}
-            <div className="absolute top-0 left-0 w-16 h-px bg-accent" />
-            <div className="absolute top-0 left-0 w-px h-16 bg-accent" />
+            <div className="absolute top-0 left-0 w-16 h-px bg-sky-400" />
+            <div className="absolute top-0 left-0 w-px h-16 bg-sky-400" />
 
             {TESTIMONIALS.map((t, i) => (
               <div
@@ -79,7 +79,7 @@ export default function Testimonials() {
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent/40 to-accent-dark/30 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-sky-400/40 to-sky-400-dark/30 flex items-center justify-center">
                     <span className="font-display font-bold text-sm text-text-primary">
                       {t.name.split(" ").map((n) => n[0]).join("")}
                     </span>
@@ -105,7 +105,7 @@ export default function Testimonials() {
                 onClick={() => setActive(i)}
                 className={`transition-all duration-300 rounded-full ${
                   active === i
-                    ? "w-8 h-2 bg-accent"
+                    ? "w-8 h-2 bg-sky-400"
                     : "w-2 h-2 bg-muted-dark hover:bg-muted"
                 }`}
                 aria-label={`View testimonial ${i + 1}`}

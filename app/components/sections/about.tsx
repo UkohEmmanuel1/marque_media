@@ -12,8 +12,8 @@ export default function About() {
       className="relative py-24 md:py-32 px-5 md:px-10 overflow-hidden"
     >
       {/* Background accent */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-accent/5 -translate-x-1/2 translate-y-1/2 pointer-events-none blur-3xl" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sky-400/5 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-sky-400/5 -translate-x-1/2 translate-y-1/2 pointer-events-none blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -26,8 +26,8 @@ export default function About() {
             }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="inline-block w-8 h-px bg-accent" />
-              <p className="font-body text-xs tracking-[0.35em] uppercase text-accent">
+              <span className="inline-block w-8 h-px bg-sky-400" />
+              <p className="font-body text-xs tracking-[0.35em] uppercase text-sky-400">
                 About Us
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function About() {
                 { label: "Impact", icon: "●" },
               ].map((val) => (
                 <div key={val.label} className="text-center md:text-left">
-                  <span className="text-accent text-lg mb-2 block">
+                  <span className="text-sky-400 text-lg mb-2 block">
                     {val.icon}
                   </span>
                   <span className="font-display text-sm tracking-[0.15em] uppercase text-text-primary">
@@ -115,7 +115,7 @@ export default function About() {
                       </svg>
                     </div>
                     <p className="font-display text-white text-xs tracking-widest uppercase font-medium">
-                      Our Studio
+                      Our Portfolio
                     </p>
                   </div>
                 </div>

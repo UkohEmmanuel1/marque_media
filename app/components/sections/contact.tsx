@@ -32,8 +32,8 @@ export default function Contact() {
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-bg-card via-bg to-bg" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sky-400/20 to-transparent" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-sky-400/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20">
@@ -46,15 +46,15 @@ export default function Contact() {
             }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="inline-block w-8 h-px bg-accent" />
-              <p className="font-body text-xs tracking-[0.35em] uppercase text-accent">
+              <span className="inline-block w-8 h-px bg-sky-400" />
+              <p className="font-body text-xs tracking-[0.35em] uppercase text-sky-400">
                 Get in Touch
               </p>
             </div>
 
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-text-primary mb-6 leading-tight">
               Let&apos;s Create Something{" "}
-              <span className="text-accent">Extraordinary</span>
+              <span className="text-sky-400">Extraordinary</span>
             </h2>
 
             <p className="font-body text-muted leading-relaxed mb-12 max-w-md">
@@ -70,8 +70,8 @@ export default function Contact() {
                 { icon: "◎", label: "Location", value: "Lagos, Nigeria" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4 group">
-                  <div className="w-10 h-10 border border-border group-hover:border-accent flex items-center justify-center transition-colors duration-300">
-                    <span className="text-accent text-sm">{item.icon}</span>
+                  <div className="w-10 h-10 border border-border group-hover:border-sky-400 flex items-center justify-center transition-colors duration-300">
+                    <span className="text-sky-400 text-sm">{item.icon}</span>
                   </div>
                   <div>
                     <p className="font-body text-xs text-muted tracking-wider uppercase">{item.label}</p>
@@ -101,7 +101,7 @@ export default function Contact() {
                   required
                   value={formState.name}
                   onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                  className="w-full bg-transparent border-b border-border focus:border-accent text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 placeholder:text-muted-dark"
+                  className="w-full bg-transparent border-b border-border focus:border-sky-400 text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 placeholder:text-muted-dark"
                   placeholder="John Doe"
                 />
               </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                   required
                   value={formState.email}
                   onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full bg-transparent border-b border-border focus:border-accent text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 placeholder:text-muted-dark"
+                  className="w-full bg-transparent border-b border-border focus:border-sky-400 text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 placeholder:text-muted-dark"
                   placeholder="john@example.com"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                   required
                   value={formState.projectType}
                   onChange={(e) => setFormState({ ...formState, projectType: e.target.value })}
-                  className="w-full bg-transparent border-b border-border focus:border-accent text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 appearance-none cursor-pointer"
+                  className="w-full bg-transparent border-b border-border focus:border-sky-400 text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 appearance-none cursor-pointer"
                   style={{ backgroundImage: "none" }}
                 >
                   <option value="" className="bg-bg-card text-muted">Select a service</option>
@@ -153,7 +153,7 @@ export default function Contact() {
                   rows={4}
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  className="w-full bg-transparent border-b border-border focus:border-accent text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 resize-none placeholder:text-muted-dark"
+                  className="w-full bg-transparent border-b border-border focus:border-sky-400 text-text-primary font-body text-sm py-3 outline-none transition-colors duration-300 resize-none placeholder:text-muted-dark"
                   placeholder="Tell us about your project..."
                 />
               </div>
@@ -162,7 +162,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.2em] uppercase py-4 mt-4 hover:bg-accent transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
+                className="w-full bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.2em] uppercase py-4 mt-4 hover:bg-sky-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
               >
                 <span className={`inline-flex items-center gap-2 transition-transform duration-300 ${isSubmitting ? "-translate-y-10" : ""}`}>
                   Send Message
@@ -179,7 +179,7 @@ export default function Contact() {
 
               {/* Success message */}
               {isSubmitted && (
-                <div className="text-center py-3 text-accent font-body text-sm" style={{ animation: "fadeInUp 0.5s ease-out" }}>
+                <div className="text-center py-3 text-sky-400 font-body text-sm" style={{ animation: "fadeInUp 0.5s ease-out" }}>
                   ✓ Message sent successfully! We&apos;ll be in touch soon.
                 </div>
               )}

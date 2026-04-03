@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-bg-card border-t border-border">
       {/* Accent top line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sky-400/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-16 md:py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link
               href="/"
-              className="font-display font-bold text-lg tracking-[0.2em] uppercase text-text-primary hover:text-accent transition-colors duration-300"
+              className="font-display font-bold text-lg tracking-[0.2em] uppercase text-text-primary hover:text-sky-400 transition-colors duration-300"
             >
               Marque Media
             </Link>
@@ -26,10 +26,10 @@ export default function Footer() {
                 <a
                   key={s.abbr}
                   href={s.href}
-                  className="w-9 h-9 border border-border hover:border-accent flex items-center justify-center transition-all duration-300 group"
+                  className="w-9 h-9 border border-border hover:border-sky-400 flex items-center justify-center transition-all duration-300 group"
                   aria-label={s.label}
                 >
-                  <span className="font-mono text-xs text-muted group-hover:text-accent transition-colors">
+                  <span className="font-mono text-xs text-muted group-hover:text-sky-400 transition-colors">
                     {s.abbr}
                   </span>
                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="font-body text-sm text-muted hover:text-accent transition-colors duration-200"
+                    className="font-body text-sm text-muted hover:text-sky-400 transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {SERVICES.slice(0, 5).map((s) => (
                 <li key={s.title}>
-                  <span className="font-body text-sm text-muted hover:text-accent transition-colors duration-200 cursor-pointer">
+                  <span className="font-body text-sm text-muted hover:text-sky-400 transition-colors duration-200 cursor-pointer">
                     {s.title}
                   </span>
                 </li>
@@ -84,7 +84,7 @@ export default function Footer() {
             </ul>
             <Link
               href="#contact"
-              className="inline-block mt-6 bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.15em] uppercase px-5 py-2.5 hover:bg-accent transition-colors duration-300"
+              className="inline-block mt-6 bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.15em] uppercase px-5 py-2.5 hover:bg-sky-400 transition-colors duration-300"
             >
               Start a Project
             </Link>

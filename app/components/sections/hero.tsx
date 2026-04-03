@@ -38,8 +38,8 @@ export default function Hero() {
           <div className="stagger">
             {/* Tag */}
             <div className="flex items-center gap-3 mb-6 md:mb-8">
-              <span className="inline-block w-8 h-px bg-accent" />
-              <p className="font-body text-xs tracking-[0.35em] uppercase text-accent">
+              <span className="inline-block w-8 h-px bg-blue" />
+              <p className="font-body text-xs tracking-[0.35em] uppercase text-sky-400">
                 Film · Photo · Brand
               </p>
             </div>
@@ -52,11 +52,11 @@ export default function Hero() {
               <span
                 className="block text-[clamp(3.5rem,13vw,9.5rem)]"
                 style={{
-                  WebkitTextStroke: "2px #C8883A",
+                  WebkitTextStroke: "2px #00AEEF",
                   color: "transparent",
                 }}
               >
-                MEDIAs
+                MEDIA
               </span>
             </h1>
 
@@ -71,13 +71,13 @@ export default function Hero() {
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3">
               <Link
                 href="#portfolio"
-                className="inline-flex items-center justify-center bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-accent transition-colors duration-300"
+                className="inline-flex items-center justify-center bg-text-primary text-bg font-display font-semibold text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-sky-400 transition-colors duration-300"
               >
                 View Our Work
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center border border-text-primary font-display font-semibold text-xs tracking-[0.2em] uppercase px-8 py-4 hover:border-accent hover:text-accent transition-colors duration-300"
+                className="inline-flex items-center justify-center border border-text-primary font-display font-semibold text-xs tracking-[0.2em] uppercase px-8 py-4 hover:border-sky-400 hover:text-sky-400 transition-colors duration-300"
               >
                 Start a Project
               </Link>
@@ -130,7 +130,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative Backing Border */}
-            <div className="absolute -bottom-3 -right-3 w-full h-full border border-accent/30 -z-10" />
+            <div className="absolute -bottom-3 -right-3 w-full h-full border border-sky-400/30 -z-10" />
           </div>
         </div>
 
@@ -163,7 +163,7 @@ export default function Hero() {
         </span>
         <div className="w-px h-12 bg-text-primary/30 overflow-hidden">
           <div
-            className="w-full h-4 bg-accent"
+            className="w-full h-4 text-sky-400"
             style={{ animation: "scrollBar 1.8s ease-in-out infinite" }}
           />
         </div>

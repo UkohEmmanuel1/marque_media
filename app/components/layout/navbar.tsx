@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_LINKS, SOCIAL_LINKS } from "../../lib/data";
 
 export default function Navbar() {
@@ -25,13 +26,14 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-5 md:px-10 h-16 md:h-20 flex items-center justify-between">
-          <Link
-            href="/"
-            className="font-display font-bold text-base md:text-lg tracking-[0.2em] uppercase text-text-primary hover:text-accent transition-colors duration-300"
-          >
-            Marque Media
-          </Link>
+        <nav className="max-w-7xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
+          <Image 
+  src="/assets/logo.png" 
+  alt="logo" 
+  width={100} 
+  height={100}
+  className="w-32 h-auto hover:opacity-80 pt-8 transition-opacity" 
+/>
 
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
             {NAV_LINKS.map((link) => (
@@ -101,7 +103,12 @@ export default function Navbar() {
                 href={link.href}
                 className="font-display font-semibold text-2xl tracking-[0.12em] uppercase text-text-primary hover:text-accent transition-colors"
                 onClick={handleLinkClick}
-                style={{ animation: isMenuOpen ? `fadeInUp 0.5s ease-out ${i * 80}ms forwards` : "none", opacity: isMenuOpen ? 0 : 1 }}
+                style={{
+                  animation: isMenuOpen
+                    ? `fadeInUp 0.5s ease-out ${i * 80}ms forwards`
+                    : "none",
+                  opacity: isMenuOpen ? 0 : 1,
+                }}
               >
                 {link.label}
               </Link>
